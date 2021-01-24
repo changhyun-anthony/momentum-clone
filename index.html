@@ -3,25 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>hello</title>
+    <title>Anthony's Momentum</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="js-ttile">00:00</h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <h2>Pending</h2>
-    <ul class="js-toDoList"></ul>
-    <h2>Finished</h2>
-    <ul class="js-toDoList__finished"></ul>
-    <span class="js-weather"></span>
+    <header>
+      <div class="weather">
+        <span class="js-weather"></span>
+      </div>
+    </header>
+    <main>
+      <div class="js-clock">
+        <h1 class="js-ttile">00:00</h1>
+      </div>
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+    </main>
+    <footer>
+      <span class="footer-title">What is your main focus for today?</span>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="" />
+      </form>
+      <h2 class="pending-title">Pending</h2>
+      <ul class="js-toDoList"></ul>
+      <h2 class="finished-title">Finished</h2>
+      <ul class="js-toDoList__finished"></ul>
+    </footer>
     <script src="clock.js"></script>
     <script src="gretting.js"></script>
     <script src="todo.js"></script>
